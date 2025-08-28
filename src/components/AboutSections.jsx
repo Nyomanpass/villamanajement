@@ -6,7 +6,7 @@ function AboutUsSection() {
     '/villa2.jpg',
     '/villa3.jpg',
     '/villa4.jpg',
-    '/villa5.jpg',
+    '/aboutdua.jpg',
   ];
 
   return (
