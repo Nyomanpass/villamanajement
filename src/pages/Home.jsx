@@ -6,18 +6,22 @@ import WhyChooseUs from "../components/WhyChooseUs"
 import Testimoni from "../components/Testimoni"
 import Footer from "../components/Footer"
 import FaqSection from "../components/FaqSection"
+import Package from "../components/package"
+import Ota from "../components/Ota"
 
-function Home(){
-    return(
+function Home() {
+    return (
         <>
-            <Navbar/>
-            <Hero/>
-            <Services/>
-            <AboutUsSection/>
-            <WhyChooseUs/>
-            <Testimoni/>
-            <FaqSection/>
-            <Footer/>
+            <Navbar />
+            <Hero />
+            <Package />
+            <Ota />
+            <Services />
+            <AboutUsSection />
+            <WhyChooseUs />
+            <Testimoni />
+            <FaqSection />
+            <Footer />
         </>
     )
 }

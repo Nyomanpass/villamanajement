@@ -14,13 +14,14 @@ import {
   FaCouch,
   FaKey,
   FaShuttleVan,
+  FaSuitcase,
 } from "react-icons/fa";
 
 // ====================== DATA LAYANAN ======================
 const servicesData = [
   {
-    id: "operasional",
-    label: "Operasional",
+    id: "Service",
+    label: "Service",
     services: [
       {
         title: "Housekeeping",
@@ -30,9 +31,9 @@ const servicesData = [
         image: "/services1.jpg",
       },
       {
-        title: "Staff Management",
+        title: "Hospitality",
         description:
-          "Kami rekrut, latih, dan kelola staf villa Anda sehingga bekerja profesional sesuai SOP, tanpa Anda harus repot mengawasi setiap hari.",
+          "Pelayanan ramah dan profesional yang memastikan setiap tamu merasa diperhatikan, nyaman, dan mendapatkan pengalaman menginap terbaik di villa Anda.",
         icon: <FaUsers />,
         image: "/services2.jpg",
       },
@@ -63,13 +64,7 @@ const servicesData = [
         icon: <FaChartLine />,
         image: "/services12.jpg",
       },
-      {
-        title: "Website Management",
-        description:
-          "Pengelolaan dan pemeliharaan website villa Anda, memastikan website selalu up-to-date dan fungsional.",
-        icon: <FaLaptop />,
-        image: "/services5.jpg",
-      },
+
     ],
   },
   {
@@ -137,13 +132,20 @@ const servicesData = [
         icon: <FaShuttleVan />,
         image: "/services13.jpg",
       },
+      {
+        title: "Tour Package",
+        description:
+          "Paket tour eksklusif untuk tamu menjelajahi destinasi lokal dengan nyaman, aman, dan dipandu profesional.",
+        icon: <FaSuitcase />,
+        image: "/services13.jpg",
+      },
     ],
   },
 ];
 
 // ====================== COMPONENT ======================
 const Services = ({
-  sectionTitle = "Layanan Kami, Nilai Lebih untuk Villa Anda",
+  sectionTitle = "Operasional Kami, Nilai Lebih untuk Villa Anda",
   sectionSubtitle = "Kami menghadirkan layanan manajemen menyeluruh yang dirancang khusus agar villa Anda tetap terawat, bernilai tinggi, dan menghasilkan keuntungan berkelanjutan.",
 }) => {
   const [activeTab, setActiveTab] = useState(servicesData[0].id);
@@ -152,7 +154,7 @@ const Services = ({
   return (
     <section
       className="py-20 px-6 md:px-11 lg:px-14 xl:px-28 bg-gray-50"
-    >      
+    >
       {/* Header */}
       <div className="text-center mb-12">
         <h3 className="font-raleway text-lg font-semibold text-gray-500 mb-2">
@@ -173,15 +175,14 @@ const Services = ({
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`relative px-6 py-3 text-lg font-semibold transition-colors duration-300 mx-2
-              ${
-                activeTab === tab.id
-                  ? "text-primary"
-                  : "text-gray-500 hover:text-primary"
+              ${activeTab === tab.id
+                ? "text-primary"
+                : "text-gray-500 hover:text-primary"
               }`}
           >
             {tab.label}
             {activeTab === tab.id && (
-              <motion.span 
+              <motion.span
                 layoutId="underline"
                 className="absolute bottom-0 left-0 w-full h-1 bg-primary rounded-full"
               />

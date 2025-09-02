@@ -103,8 +103,8 @@ const Contact = () => {
                 <FaClock className="text-primary text-2xl mt-1" />
                 <div>
                   <h4 className="font-bold text-gray-800">Jam Operasional</h4>
-                  <p className="text-gray-600">Senin – Minggu</p>
-                  <p className="text-gray-600">24/7 Customer Service</p>
+                  <p className="text-gray-600">Senin – Jumat</p>
+                  <p className="text-gray-600">08.00 – 17.00 WITA</p>
                 </div>
               </div>
             </div>

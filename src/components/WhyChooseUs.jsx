@@ -7,13 +7,13 @@ export default function WhyChooseUs() {
       {/* Judul Utama */}
       <div className="text-center max-w-4xl mx-auto mb-16">
         <p className="font-raleway text-lg font-semibold text-gray-500 mb-2">
-          Why Choose Us
+          How We Work
         </p>
         <h2 className="font-playfair text-3xl md:text-4xl bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-bold leading-snug">
           Filosofi Kerja yang Kami Junjung Tinggi
         </h2>
         <p className="font-lora text-gray-600 text-base md:text-lg mt-4 max-w-3xl mx-auto">
-          Setiap langkah yang kami ambil selalu berlandaskan kualitas, kepercayaan, 
+          Setiap langkah yang kami ambil selalu berlandaskan kualitas, kepercayaan,
           dan dedikasi demi mengoptimalkan potensi properti Anda.
         </p>
       </div>
@@ -52,8 +52,8 @@ export default function WhyChooseUs() {
             icon: <FaHandshake className="text-white text-2xl" />,
           },
         ].map((item, i) => (
-          <div 
-            key={i} 
+          <div
+            key={i}
             className="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:shadow-xl hover:-translate-y-2"
           >
             {/* Icon Bulat */}
@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
       </div>
 
       {/* Bagian CTA yang Lebih Menarik */}
-     
+
     </section>
   );
 }
