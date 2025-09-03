@@ -3,7 +3,6 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import AboutUsSection from "../components/AboutSections"
 import WhyChooseUs from "../components/WhyChooseUs"
-import Testimoni from "../components/Testimoni"
 import Footer from "../components/Footer"
 import FaqSection from "../components/FaqSection"
 import Package from "../components/package"
@@ -21,7 +20,6 @@ function Home() {
             <HowWeWork/>
             <AboutUsSection />
             <WhyChooseUs />
-            <Testimoni />
             <FaqSection />
             <Footer />
         </>

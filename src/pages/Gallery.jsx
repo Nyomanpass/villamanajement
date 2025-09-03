@@ -6,8 +6,11 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
+    const { t } = useTranslation();
+
 const villas = {
   "Poedja Villa Jimbaran": [
     {
@@ -42,7 +45,7 @@ const villas = {
     },
    
   ],
-  "Umami Villa Jimbaran": [
+  "Umani Villa Jimbaran": [
     {
       id: "umami-1",
       src: "/villa/umami/villamanajementlima.jpg",
@@ -152,17 +155,17 @@ const villas = {
         <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1]"></div>
 
         {/* Content */}
-        <div className="flex flex-col justify-center items-center h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 pt-12 z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold text-white">
-              Gallery Villa
-            </h2>
-            <p className="text-white max-w-2xl mx-auto mt-3">
-              Jelajahi keindahan dan kemewahan villa kami melalui koleksi foto yang
-              menakjubkan dari setiap sudut properti yang istimewa ini.
-            </p>
-          </div>
-        </div>
+       <div className="flex flex-col justify-center items-center h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 pt-12 z-10">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl  font-bold text-white">
+          {t("gallery.hero_title")}
+        </h2>
+        <p className="text-white md:text-md text-sm max-w-2xl mx-auto mt-3">
+          {t("gallery.hero_desc")}
+        </p>
+      </div>
+    </div>
+
       </div>
 
       <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">

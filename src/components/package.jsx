@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from 'react';
 import { FaXmark } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 export const Package = () => {
       const [isOpen, setIsOpen] = useState(false);
       const [selectedPackage, setSelectedPackage] = useState(null);
       const [message, setMessage] = useState("");
+      const { t } = useTranslation();
 
       const handlePopup = () => {
             setIsOpen(!isOpen);
@@ -71,7 +73,7 @@ export const Package = () => {
             );
 
             // WhatsApp number (replace with your actual number)
-            const whatsappNumber = '6288223754172'; // Replace with your WhatsApp number
+            const whatsappNumber = '6281575112801'; // Replace with your WhatsApp number
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
             // Open WhatsApp
@@ -89,13 +91,13 @@ export const Package = () => {
                         <div className="xl:w-[80%] bg-white py-10 lg:py-18 rounded-xl shadow-lg">
                               <div className="text-center mb-12 border-b-2 border-gray-200 pb-14 w-[80%] mx-auto">
                                     <h3 className="font-raleway text-lg font-semibold text-gray-500 mb-2">
-                                          Our Package
+                                          {t("package.titleSmall")}
                                     </h3>
                                     <h2 className="font-playfair text-3xl md:text-4xl bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-bold leading-snug">
-                                          Paket Layanan yang Sesuai Kebutuhan Anda
+                                           {t("package.titleMain")} 
                                     </h2>
                                     <p className="font-lora text-gray-600 mt-4 max-w-2xl mx-auto">
-                                          Temukan paket yang paling tepat untuk mendukung villa Anda, apakah membutuhkan pengelolaan menyeluruh atau fokus pada pemasaran online yang efektif.
+                                           {t("package.description")} 
                                     </p>
 
                               </div>
@@ -103,28 +105,28 @@ export const Package = () => {
                               <div className="flex flex-col md:flex-row justify-center items-center gap-6">
                                     <div className="lg:w-[40%] px-7 py-8 xl:py-8 xl:px-10 lg:min-h-56 xl:min-h-72 rounded-lg flex flex-col justify-between hover:shadow-lg transition-all">
                                           <div>
-                                                <h4 className="font-playfair text-xl font-semibold mb-3 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent leading-snug">Full Management</h4>
-                                                <p className="font-lora text-gray-600">
-                                                      Apakah Anda lelah mengurus villa sendirian? Dengan paket ini, operasional, perawatan, keuangan, dan pemasaran ditangani profesional sehingga Anda bebas menikmati hasil.
+                                                <h4 className="font-playfair text-xl font-semibold mb-3 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent leading-snug">{t("package.packages.fullManagement.title")}</h4>
+                                                <p className="font-lora text-gray-600"> 
+                                                    {t("package.packages.fullManagement.description")}
                                                 </p>
                                           </div>
                                           <button
                                                 onClick={() => handleSelectedPackage("Full Management")}
                                                 className="mt-8 w-full px-6 py-3 bg-secondary text-white font-semibold rounded-full shadow-lg hover:bg-primary duration-300 transform inline-block mx-auto lg:mx-0 transition-all">
-                                                Pilih Paket Ini
+                                                {t("package.packages.fullManagement.button")}
                                           </button>
                                     </div>
                                     <div className="lg:w-[40%] px-7 py-8 xl:py-8 xl:px-10 lg:min-h-56 xl:min-h-72 rounded-lg flex flex-col justify-between hover:shadow-lg transition-all">
                                           <div>
-                                                <h4 className="font-raleway text-xl mb-3 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-bold leading-snug">Online Marketing</h4>
+                                                <h4 className="font-raleway text-xl mb-3 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-bold leading-snug">{t("package.packages.onlineMarketing.title")}</h4>
                                                 <p className="font-lora text-gray-600">
-                                                      Sulit meningkatkan reservasi meski operasional sudah rapi? Paket ini fokus pada pemasaran digital, optimasi listing, dan promosi online agar villa Anda lebih dikenal.
+                                                      {t("package.packages.onlineMarketing.description")}
                                                 </p>
                                           </div>
                                           <button
                                                 onClick={() => handleSelectedPackage("Online Marketing")}
                                                 className="mt-8 w-full px-6 py-3 bg-transparent border-2 border-secondary text-secondary font-semibold rounded-full shadow-lg hover:bg-secondary hover:text-white duration-300 transform inline-block mx-auto lg:mx-0 transition-all">
-                                                Pilih Paket Ini
+                                                 {t("package.packages.onlineMarketing.button")}
                                           </button>
                                     </div>
                               </div>
@@ -136,7 +138,7 @@ export const Package = () => {
                         <div className="fixed inset-0 bg-black/60 bg-opacity-50 flex items-center justify-center z-50">
                               <div className="bg-white p-8 rounded-lg max-w-md w-full mx-4">
                                     <div className="flex justify-between items-center mb-6">
-                                          <h3 className="text-xl font-semibold ">Form Pemesanan Paket</h3>
+                                          <h3 className="text-xl font-semibold ">{t("package.modal.title")}</h3>
                                           <button
                                                 type="button"
                                                 onClick={handlePopup}
@@ -148,7 +150,7 @@ export const Package = () => {
                                     <form onSubmit={handleSubmit}>
                                           <div className="mb-4">
                                                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                                                      Nama <span className="text-red-500">*</span>
+                                                      {t("package.modal.name")} <span className="text-red-500">*</span>
                                                 </label>
                                                 <input
                                                       type="text"
@@ -157,12 +159,12 @@ export const Package = () => {
                                                       onChange={handleInputChange}
                                                       required
                                                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
-                                                      placeholder="Masukkan nama Anda"
+                                                      placeholder={t("package.modal.placeholder.name")}
                                                 />
                                           </div>
                                           <div className="mb-4">
                                                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                                                      Email <span className="text-red-500">*</span>
+                                                      {t("package.modal.email")} <span className="text-red-500">*</span>
                                                 </label>
                                                 <input
                                                       type="email"
@@ -171,12 +173,12 @@ export const Package = () => {
                                                       onChange={handleInputChange}
                                                       required
                                                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
-                                                      placeholder="Masukkan email Anda"
+                                                      placeholder={t("package.modal.placeholder.email")}
                                                 />
                                           </div>
                                           <div className="mb-6">
                                                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                                                      Nomor Telepon <span className="text-red-500">*</span>
+                                                      {t("package.modal.phone")} <span className="text-red-500">*</span>
                                                 </label>
                                                 <input
                                                       type="tel"
@@ -185,12 +187,12 @@ export const Package = () => {
                                                       onChange={handleInputChange}
                                                       required
                                                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
-                                                      placeholder="Masukkan nomor telepon"
+                                                      placeholder={t("package.modal.placeholder.phone")}
                                                 />
                                           </div>
                                           <div className="mb-6">
                                                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                                                      Pesan <span className="text-red-500">*</span>
+                                                      {t("package.modal.message")} <span className="text-red-500">*</span>
                                                 </label>
                                                 <textarea
                                                       name="message"
@@ -208,7 +210,7 @@ export const Package = () => {
                                                       type="submit"
                                                       className="flex-1 bg-secondary text-white py-2 px-4 rounded-md hover:bg-primary transition-colors"
                                                 >
-                                                      Kirim ke WhatsApp
+                                                      {t("package.modal.submit")}
                                                 </button>
 
                                           </div>

@@ -1,0 +1,451 @@
+{
+
+  "app": "Konsultasi Gratis",
+  
+
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "services": "Layanan",
+    "gallery": "Galeri",
+    "contact": "Kontak"
+  },
+
+  "hero": {
+    "slide1": {
+      "title": "Maksimalkan Potensi Villa Anda Bersama Ahlinya",
+      "description": "Dari reservasi hingga laporan keuangan, semua dikelola dengan standar tinggi dan transparan.",
+      "button": "Lihat Layanan Kami"
+    },
+    "slide2": {
+      "title": "Tingkatkan Okupansi dan Keuntungan Villa Anda",
+      "description": "Kami hadir untuk membantu properti Anda mencapai kinerja finansial maksimal dengan strategi pemasaran yang teruji.",
+      "button": "Lihat Layanan Kami"
+    },
+    "slide3": {
+      "title": "Kenyamanan Tamu, Ketenangan Pemilik",
+      "description": "Kami memastikan setiap tamu mendapatkan pengalaman menginap terbaik, sehingga Anda bisa fokus pada hal yang lebih penting.",
+      "button": "Lihat Layanan Kami"
+    },
+    "aboutTitle": "Ketenangan Pikiran, Investasi Terus Bertumbuh",
+    "aboutDescription": "Kami hadir untuk memberikan solusi manajemen properti yang terpercaya, memastikan setiap detail operasional berjalan sempurna. Dengan layanan personal dan strategi yang terarah, kami tidak hanya menjaga aset Anda, tetapi juga membantu investasi Anda berkembang maksimal.",
+    "aboutMainImageAlt": "Gambar Villa Utama"
+  },
+
+  "package": {
+    "titleSmall": "Paket Kami",
+    "titleMain": "Paket Layanan yang Sesuai Kebutuhan Anda",
+    "description": "Temukan paket yang paling tepat untuk mendukung villa Anda, apakah membutuhkan pengelolaan menyeluruh atau fokus pada pemasaran online yang efektif.",
+    "packages": {
+      "fullManagement": {
+        "title": "Full Management",
+        "description": "Apakah Anda lelah mengurus villa sendirian? Dengan paket ini, operasional, perawatan, keuangan, dan pemasaran ditangani profesional sehingga Anda bebas menikmati hasil.",
+        "button": "Pilih Paket Ini"
+      },
+      "onlineMarketing": {
+        "title": "Online Marketing",
+        "description": "Sulit meningkatkan reservasi meski operasional sudah rapi? Paket ini fokus pada pemasaran digital, optimasi listing, dan promosi online agar villa Anda lebih dikenal.",
+        "button": "Pilih Paket Ini"
+      }
+    },
+    "modal": {
+      "title": "Form Pemesanan Paket",
+      "name": "Nama",
+      "email": "Email",
+      "phone": "Nomor Telepon",
+      "message": "Pesan",
+      "submit": "Kirim ke WhatsApp",
+      "placeholder": {
+        "name": "Masukkan nama Anda",
+        "email": "Masukkan email Anda",
+        "phone": "Masukkan nomor telepon",
+        "message": "Masukkan pesan Anda"
+      }
+    },
+    "alert": "Mohon lengkapi semua field yang diperlukan"
+   },
+
+  "servicesSection": {
+    "header": {
+      "subtitle": "Tim kami menjalankan operasional villa dengan standar profesional, memastikan properti Anda terawat dan tamu merasa nyaman.",
+      "title": "Pengelolaan Harian Villa untuk Kenyamanan Tamu & Perawatan Properti",
+      "category": "Operasional Villa"
+    },
+    "tabs": {
+      "Service": {
+        "label": "Service",
+        "items": [
+          {
+            "title": "Housekeeping",
+            "description": "Kebersihan adalah standar utama kenyamanan tamu. Tim housekeeping kami terlatih menjaga villa Anda tetap bersih, rapi, dan siap dihuni setiap saat."
+          },
+          {
+            "title": "Hospitality",
+            "description": "Pelayanan ramah dan profesional yang memastikan setiap tamu merasa diperhatikan, nyaman, dan mendapatkan pengalaman menginap terbaik di villa Anda."
+          },
+          {
+            "title": "Maintenance",
+            "description": "Perawatan teknis rutin yang mencegah kerusakan besar dan memastikan seluruh fasilitas villa selalu berfungsi optimal."
+          }
+        ]
+      },
+      "pemasaran": {
+        "label": "Pemasaran",
+        "items": [
+          {
+            "title": "Platform Booking",
+            "description": "Kami mendaftarkan dan mengelola villa Anda di berbagai platform booking ternama untuk menjangkau pasar yang lebih luas."
+          },
+          {
+            "title": "Digital Marketing",
+            "description": "Strategi pemasaran digital yang inovatif, termasuk optimasi SEO, iklan media sosial, dan kampanye email untuk meningkatkan visibilitas villa Anda."
+          }
+        ]
+      },
+      "keuangan": {
+        "label": "Keuangan",
+        "items": [
+          {
+            "title": "Laporan Bulanan",
+            "description": "Anda akan menerima laporan keuangan bulanan yang terperinci dan transparan, termasuk catatan pemasukan dan pengeluaran."
+          },
+          {
+            "title": "Pembagian Hasil",
+            "description": "Pembayaran hasil sewa villa yang teratur dan tepat waktu sesuai dengan perjanjian yang telah disepakati."
+          }
+        ]
+      },
+      "perawatan": {
+        "label": "Perawatan",
+        "items": [
+          {
+            "title": "Taman & Landscape",
+            "description": "Perawatan rutin taman dan area lanskap untuk menjaga keindahan dan daya tarik villa Anda."
+          },
+          {
+            "title": "Kolam Renang",
+            "description": "Pembersihan dan perawatan kolam renang secara berkala untuk menjamin kebersihan dan kualitas air yang optimal."
+          },
+          {
+            "title": "Interior Care",
+            "description": "Perawatan berkala pada interior dan furnitur untuk menjaga kondisi villa tetap prima."
+          }
+        ]
+      },
+      "tamu": {
+        "label": "Tamu",
+        "items": [
+          {
+            "title": "Check-in & Concierge",
+            "description": "Layanan check-in dan check-out yang ramah, cepat, dan profesional, serta bantuan concierge untuk memenuhi kebutuhan tamu selama menginap."
+          },
+          {
+            "title": "Airport Transfer",
+            "description": "Layanan penjemputan dan pengantaran bandara yang dapat diandalkan, memberikan kenyamanan ekstra bagi tamu Anda."
+          },
+          {
+            "title": "Tour Package",
+            "description": "Paket tour eksklusif untuk tamu menjelajahi destinasi lokal dengan nyaman, aman, dan dipandu profesional."
+          }
+        ]
+      }
+    }
+  },
+
+  "servicesHome": {
+    "header": {
+      "subtitle": "Layanan Kami",
+      "title": "Apa yang Kami Lakukan",
+      "description": "Kami memberikan layanan manajemen properti yang profesional dan menyeluruh, dari pengelolaan hingga pemasaran."
+    },
+   "cards": [
+      {
+        "title": "KAMI MENGELOLA",
+        "desc": "Penyewaan properti, reservasi, dan operasional villa Anda.",
+        "image": "/villa/aming/villamanajementdua.jpg",
+        "link": "/layanan/we-manage"
+      },
+      {
+        "title": "KAMI MERAWAT",
+        "desc": "Pemeliharaan, komunikasi, dan layanan tamu yang profesional.",
+        "image": "/villa/umami/villamanajementtiga.jpg",
+        "link": "/layanan/we-care"
+      },
+      {
+        "title": "KAMI MENINGKATKAN",
+        "desc": "Distribusi online, SEO, media sosial, serta foto & videografi.",
+        "image": "/villa/poedja/villa11.jpg",
+        "link": "/layanan/we-amplify"
+      }
+    ],
+    "button": {
+      "text": "Lihat Semua Layanan",
+      "link": "/layanan"
+    }
+  },
+
+  "howWeWork": {
+    "header": {
+      "subtitle": "Cara Kami Bekerja",
+      "title": "Memberikan Layanan Manajemen Vila Terbaik"
+    },
+    "cards": [
+      {
+        "title": "Strategi Pemasaran",
+        "desc": "Kami ciptakan foto dan video profesional, deskripsi ramah mesin pencari, serta branding villa yang kuat agar properti Anda lebih menonjol."
+      },
+      {
+        "title": "Riset Pasar & Keuangan",
+        "desc": "Perencanaan berbasis data membantu memprediksi pendapatan secara realistis sehingga Anda bisa memperkirakan keuntungan investasi."
+      },
+      {
+        "title": "Jangkauan Internasional",
+        "desc": "Properti didistribusikan ke berbagai platform populer, media sosial, dan jaringan agen wisata terpercaya di seluruh dunia."
+      },
+      {
+        "title": "Layanan Tamu 24/7",
+        "desc": "Reservasi, pertanyaan, maupun kebutuhan tamu ditangani secara cepat oleh tim yang selalu siap setiap saat."
+      },
+      {
+        "title": "Pelayanan Terbaik",
+        "desc": "Tim kebersihan dan staf tamu kami memberikan pengalaman menginap yang nyaman dan berkelas, layaknya hotel butik."
+      },
+      {
+        "title": "Pemeliharaan Rutin",
+        "desc": "Kami memiliki tim teknisi internal yang siap melakukan perbaikan mendesak, perawatan rutin, hingga renovasi besar."
+      },
+      {
+        "title": "Dashboard Pemilik",
+        "desc": "Pantau langsung kinerja properti, laporan pemeliharaan, jadwal penyewaan, hingga pembayaran melalui aplikasi khusus pemilik."
+      }
+    ]
+  },
+
+  "aboutUs": {
+    "header": {
+      "subtitle": "Tentang Kami",
+      "title": "Properti Anda Adalah Prioritas Kami",
+      "description": "Setiap properti memiliki cerita dan nilai unik. Tugas kami adalah merawatnya dengan penuh dedikasi, sekaligus menghadirkan strategi manajemen yang membuat properti Anda tumbuh dan berkembang. Kami tidak hanya mengelola vila; kami membangun kemitraan yang transparan dan terpercaya."
+    }
+  },
+
+  "whyChooseUs": {
+    "header": {
+      "subtitle": "Mengapa Memilih Kami",
+      "title": "Filosofi Kerja yang Kami Junjung Tinggi",
+      "description": "Setiap langkah yang kami ambil selalu berlandaskan kualitas, kepercayaan, dan dedikasi demi mengoptimalkan potensi properti Anda."
+    },
+    "cards": [
+      {
+        "title": "Profesionalisme",
+        "desc": "Kami bekerja dengan standar tinggi, memastikan setiap detail operasional dan layanan berjalan sesuai prosedur terbaik.",
+        "icon": "FaUserTie"
+      },
+      {
+        "title": "Transparansi",
+        "desc": "Setiap laporan, keuangan, dan hasil kerja disampaikan secara terbuka agar pemilik villa selalu merasa tenang dan percaya.",
+        "icon": "FaBalanceScale"
+      },
+      {
+        "title": "Komitmen Kualitas",
+        "desc": "Kami menjaga properti Anda tetap dalam kondisi prima, memberikan pengalaman terbaik bagi tamu, dan menjaga nilai investasi Anda.",
+        "icon": "FaStar"
+      },
+      {
+        "title": "Inovasi Pemasaran",
+        "desc": "Strategi pemasaran modern yang memanfaatkan teknologi digital untuk meningkatkan eksposur dan okupansi villa.",
+        "icon": "FaBullhorn"
+      },
+      {
+        "title": "Fokus pada Tamu",
+        "desc": "Kami mengutamakan kepuasan tamu dengan layanan ramah, profesional, dan penuh perhatian sehingga mereka ingin kembali lagi.",
+        "icon": "FaSmile"
+      },
+      {
+        "title": "Kemitraan Jangka Panjang",
+        "desc": "Kami bukan hanya penyedia layanan, tapi mitra strategis yang tumbuh bersama Anda dalam mengembangkan bisnis villa.",
+        "icon": "FaHandshake"
+      }
+    ]
+  },
+  "faq": {
+    "header": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "description": "Temukan jawaban untuk pertanyaan umum tentang layanan kami."
+    },
+    "items": [
+      {
+        "question": "Apa saja layanan yang termasuk dalam manajemen vila?",
+        "answer": "Kami mengurus semuanya, mulai dari pemasaran, manajemen pemesanan, verifikasi tamu, pembersihan rutin, perawatan properti, hingga laporan keuangan bulanan. Anda hanya perlu duduk santai dan menikmati keuntungannya.",
+        "msg": "Hello, I'd like to know which services are included in your villa management. Could you share the detailed scope and sample deliverables? Thank you."
+      },
+      {
+        "question": "Bagaimana Anda memasarkan properti saya?",
+        "answer": "Kami menggunakan strategi pemasaran multi-platform, termasuk listing di situs booking terkemuka seperti Airbnb dan Booking.com, serta promosi melalui media sosial dan jaringan agen perjalanan kami.",
+        "msg": "Hello, could you outline your marketing & reservation strategy for my villa?"
+      },
+      {
+        "question": "Berapa biaya jasa manajemen vila?",
+        "answer": "Kami menerapkan sistem komisi berdasarkan persentase dari pendapatan bersih properti Anda. Tidak ada biaya tersembunyi. Model ini memastikan kami bekerja keras untuk memaksimalkan pendapatan Anda.",
+        "msg": "Hello, could you share your management fee structure?"
+      },
+      {
+        "question": "Bagaimana cara saya memantau kinerja vila saya?",
+        "answer": "Kami menyediakan portal khusus untuk pemilik vila, di mana Anda dapat melihat status pemesanan, laporan pendapatan, biaya operasional, dan jadwal pemeliharaan secara transparan setiap saat.",
+        "msg": "Hello, what reporting and dashboard access will I get to monitor occupancy, ADR, RevPAR, expenses, and payouts? How often are reports provided?"
+      },
+      {
+        "question": "Bagaimana jika ada kerusakan atau keadaan darurat?",
+        "answer": "Tim kami siaga 24/7 untuk menangani semua masalah yang mungkin timbul, mulai dari perbaikan kecil hingga keadaan darurat. Kami akan menghubungi Anda untuk setiap keputusan besar terkait properti.",
+        "msg": "Hello, what is your SOP for maintenance issues or emergencies?"
+      },
+      {
+        "question": "Apakah Anda juga melayani vila yang masih baru?",
+        "answer": "Ya, kami dapat membantu menyiapkan properti baru Anda dari awal. Kami akan memberikan saran tentang penataan interior, kebutuhan perlengkapan, dan foto profesional agar properti Anda siap untuk pasar.",
+        "msg": "Hello, do you also manage newly built villas? What is your approach to preparing them for the rental market?"
+      }
+    ]
+  },
+
+  "footer": {
+    "deskripsi": "Partner terpercaya dalam mengelola dan mengoptimalkan potensi villa Anda.",
+    "cta": {
+      "title": "Waktunya Villa Anda Dikelola oleh Ahlinya",
+      "description": "Satu percakapan bisa jadi awal perubahan besar. Mari diskusikan strategi terbaik untuk menjadikan villa Anda lebih menguntungkan.",
+      "button": "Konsultasi Sekarang"
+    },
+    "links": {
+      "main": {
+        "title": "Link",
+        "items": [
+          { "name": "Home", "url": "/" },
+          { "name": "Pilar Produk", "url": "/produk" },
+          { "name": "Tentang Kami", "url": "/about" },
+          { "name": "Kontak", "url": "/contact" }
+        ]
+      },
+      "packages": {
+        "title": "Package Kami",
+        "items": [
+          { "name": "Full Management", "url": "/layanan/manajemen" },
+          { "name": "Online Marketing", "url": "/layanan/pemasaran" }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "phone": "+62 815‑7511‑2801",
+      "email": "info@manajemenvilla.com",
+      "address": "Jl. Sunset Road No.88, Bali"
+    },
+    "copyright": "© 2025 Manajemen Villa. Powered by Bombora."
+  },
+
+  "about": {
+    "hero_title": "Tentang Kami",
+    "hero_desc": "Kami adalah tim profesional yang fokus pada manajemen villa di Bali, menghadirkan layanan terpercaya untuk pemilik sekaligus pengalaman berkesan bagi setiap tamu.",
+    "founder_title": "Mengenal Lebih Dekat",
+    "founder_name": "Dina Amelya",
+    "founder_desc1": "Selamat datang di layanan manajemen vila kami. Saya Dina Amelya, pendiri dengan pengalaman lebih dari 5 tahun dalam industri perhotelan dan properti. Perjalanan saya dimulai dari kecintaan mendalam terhadap keindahan alam Indonesia dan hasrat untuk menciptakan pengalaman menginap yang tak terlupakan bagi setiap tamu.",
+    "founder_desc2": "Filosofi kami berakar pada satu prinsip sederhana: \"Your Property Is Our Priority\". Setiap vila yang kami kelola diperlakukan seperti properti kami sendiri, dengan perhatian penuh pada setiap detail, mulai dari perawatan rutin hingga memastikan tamu merasa seperti di rumah. Pendekatan ini bukan sekadar bisnis, melainkan dedikasi personal untuk menjaga kualitas dan integritas properti Anda.",
+    "founder_quote": "Kami yakin bahwa manajemen vila yang sukses dibangun di atas kepercayaan dan komunikasi yang transparan. Kami tidak hanya mengelola properti, tetapi juga membangun kemitraan yang kuat dengan para pemilik untuk mencapai tujuan bersama."
+  },
+
+  "services": {
+    "hero_title": "Layanan Kami",
+    "hero_desc": "Kami menyediakan layanan manajemen villa profesional di Bali, mulai dari pemasaran, pemeliharaan, hingga pelayanan tamu.",
+    "we_care_title": "Kami Merawat",
+    "we_care_desc": "Dari kebersihan, taman, hingga pemeliharaan listrik & pipa — tim ahli kami siap menangani seluruh kebutuhan properti Anda tanpa terkecuali. Dengan standar tinggi dan pengalaman yang teruji, kami memastikan setiap villa mendapatkan perhatian menyeluruh. Setiap detail diperhatikan secara cermat, mulai dari perawatan rutin harian hingga penanganan teknis yang lebih kompleks, agar kenyamanan tetap optimal dan gangguan dapat diminimalisir. Dengan pendekatan yang transparan dan profesional, Anda dapat merasa tenang karena properti selalu berada dalam pengawasan yang tepat.",
+    "we_manage_title": "Kami Mengelola",
+    "we_manage_desc": "Kami mengelola properti Anda dengan penuh transparansi, mulai dari strategi pemasaran kreatif hingga operasional sehari-hari. Dengan pendekatan yang sistematis, setiap proses dikelola secara profesional oleh tim berpengalaman. Kami memastikan properti Anda mendapatkan reservasi yang menguntungkan, staf yang terlatih sesuai standar, serta laporan keuangan yang transparan dan mudah dipantau. Semua ini kami lakukan agar Anda merasa tenang dan yakin bahwa properti selalu dalam kondisi terbaik.",
+    "we_amplify_title": "Kami Meningkatkan",
+    "we_amplify_desc": "Di era digital, kekuatan promosi online menjadi kunci kesuksesan properti Anda. Melalui strategi distribusi global, optimasi SEO, branding di media sosial, serta visual profesional, kami membantu properti Anda menonjol di pasar yang kompetitif. Semua langkah dilakukan dengan evaluasi berkelanjutan agar hasil selalu maksimal.",
+    "care_services": [
+      {
+        "title": "Pemeliharaan Villa",
+        "desc": "Properti dirawat dengan teliti oleh tim profesional."
+      },
+      {
+        "title": "Pelayanan Tamu",
+        "desc": "Tim siaga penuh untuk membantu tamu setiap hari."
+      },
+      {
+        "title": "Desain Interior",
+        "desc": "Bantuan penataan ulang interior agar lebih nyaman."
+      },
+      {
+        "title": "Komunikasi",
+        "desc": "Manajer villa menjaga komunikasi & kepercayaan penuh."
+      }
+    ],
+    "manage_services": [
+      {
+        "title": "Penyewaan & Pemasaran",
+        "desc": "Properti Anda dipasarkan dengan strategi kreatif & efektif."
+      },
+      {
+        "title": "Pemesanan & Reservasi",
+        "desc": "Proses booking efisien dengan sistem kalender online modern."
+      },
+      {
+        "title": "Operasional Properti",
+        "desc": "Staf operasional & manajemen disediakan penuh untuk properti Anda."
+      },
+      {
+        "title": "Pelatihan Staf",
+        "desc": "Setiap staf dilatih untuk memenuhi standar profesional."
+      },
+      {
+        "title": "Laporan Bulanan",
+        "desc": "Transparansi penuh melalui laporan keuangan rutin & jelas."
+      }
+    ],
+    "amplify_services": [
+      {
+        "title": "Distribusi E-Commerce",
+        "desc": "Properti terdaftar di mitra agen, database klien, & platform perjalanan online."
+      },
+      {
+        "title": "SEO & Sosial Media",
+        "desc": "Website responsif & branding kuat di berbagai media sosial."
+      },
+      {
+        "title": "Foto & Videography",
+        "desc": "Pengambilan gambar profesional, video drone, dan visual berkualitas tinggi."
+      },
+      {
+        "title": "Evaluasi Berkelanjutan",
+        "desc": "Monitoring & perbaikan terus-menerus untuk hasil optimal."
+      }
+    ]
+  },
+
+
+  "gallery": {
+    "hero_title": "Gallery Villa",
+    "hero_desc": "Jelajahi keindahan dan kemewahan villa kami melalui koleksi foto yang menakjubkan dari setiap sudut properti yang istimewa ini."
+  },
+
+  "contact": {
+    "hero_title": "Kontak Kami",
+    "hero_desc": "Jelajahi keindahan dan kemewahan villa kami melalui koleksi foto yang menakjubkan dari setiap sudut properti yang istimewa ini.",
+    "form_title": "Kirimkan Pesan",
+    "form_desc": "Kami akan segera menghubungi Anda kembali.",
+    "input_name": "Nama Lengkap",
+    "input_email": "Email",
+    "input_phone": "No. Telepon",
+    "input_subject": "Subjek",
+    "input_message": "Pesan Anda",
+    "form_button": "Kirim Pesan",
+    "info_title": "Hubungi Kami",
+    "info_desc": "Kami siap membantu Anda kapan saja.",
+    "address": "Alamat",
+    "phone": "Telepon",
+    "email": "Email",
+    "hours": "Jam Operasional",
+    "days": "Senin – Jumat",
+    "time": "08.00 – 17.00 WITA"
+  }
+
+
+}

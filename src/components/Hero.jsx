@@ -1,24 +1,30 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaPlay, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+  
   const slides = [
     {
       image: "/villa/poedja/villa3.jpg",
-      title: "Maksimalkan Potensi Villa Anda Bersama Ahlinya",
-      description: "Dari reservasi hingga laporan keuangan, semua dikelola dengan standar tinggi dan transparan.",
+      title: t("hero.slide1.title"),
+      description: t("hero.slide1.description"),
+      button: t("hero.slide1.button"),
     },
     {
       image: "/villa/poedja/villa6.jpg",
-      title: "Tingkatkan Okupansi dan Keuntungan Villa Anda",
-      description: "Kami hadir untuk membantu properti Anda mencapai kinerja finansial maksimal dengan strategi pemasaran yang teruji.",
+      title: t("hero.slide2.title"),
+      description: t("hero.slide2.description"),
+      button: t("hero.slide2.button"),
     },
     {
       image: "/villa/uliwood/villamanajementdua.jpg",
-      title: "Kenyamanan Tamu, Ketenangan Pemilik",
-      description: "Kami memastikan setiap tamu mendapatkan pengalaman menginap terbaik, sehingga Anda bisa fokus pada hal yang lebih penting.",
+      title: t("hero.slide3.title"),
+      description: t("hero.slide3.description"),
+      button: t("hero.slide3.button"),
     },
   ];
 
@@ -28,17 +34,11 @@ export default function Hero() {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 6000);
-
     return () => clearInterval(interval);
   }, [slides.length]);
 
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
-  };
+  const nextSlide = () => setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  const prevSlide = () => setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
 
   const currentContent = slides[currentSlide];
 
@@ -78,7 +78,6 @@ export default function Hero() {
                 {currentContent.description}
               </motion.p>
               
-              {/* === BUTTON INI SEKARANG BERADA DALAM ANIMATEPRESENCE === */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -89,7 +88,7 @@ export default function Hero() {
                   href="/layanan"
                   className="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-secondary transition-colors duration-300 transform hover:scale-105"
                 >
-                  Lihat Layanan Kami
+                  {currentContent.button}
                 </a>
               </motion.div>
             </motion.div>
@@ -111,35 +110,27 @@ export default function Hero() {
           <FaChevronRight size={24} />
         </button>
       </section>
-      
-      {/* Bagian About - Kode tidak diubah */}
+
+      {/* Bagian About */}
       <section className="bg-white py-20 px-6 md:px-12 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="w-full relative h-[450px] md:h-[600px] lg:h-[700px] rounded-lg shadow-2xl overflow-hidden">
             <img
               src="/villa/umami/villamanajementtiga.jpg" 
-              alt="Main Villa"
+              alt={t("hero.aboutMainImageAlt")}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
-            <a 
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="absolute inset-0 flex items-center justify-center cursor-pointer"
-            >
-      
-            </a>
           </div>
 
           <div className="relative w-full h-full flex flex-col justify-center text-center lg:text-left">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent leading-snug mb-5">
-              Ketenangan Pikiran,<br /> Investasi Terus Bertumbuh
+              {t("hero.aboutTitle")}
             </h2>
             <p className="font-lora text-gray-600 leading-relaxed text-center lg:text-left">
-              Kami hadir untuk memberikan solusi manajemen properti yang terpercaya, memastikan setiap detail operasional berjalan sempurna. Dengan layanan personal dan strategi yang terarah, kami tidak hanya menjaga aset Anda, tetapi juga membantu investasi Anda berkembang maksimal.
+              {t("hero.aboutDescription")}
             </p>
-            
-            <div className="flex flex-col md:flex-row gap-6 mt-12 w-full justify-center lg:justify-start">
+
+             <div className="flex flex-col md:flex-row gap-6 mt-12 w-full justify-center lg:justify-start">
               <div className="relative w-full md:w-1/2 h-64 rounded-lg shadow-lg overflow-hidden">
                 <img
                   src="/villa/umami/villamanajementempat.jpg" 
@@ -155,8 +146,8 @@ export default function Hero() {
                 />
               </div>
             </div>
-            
           </div>
+
         </div>
       </section>
     </>

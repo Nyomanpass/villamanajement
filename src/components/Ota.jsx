@@ -7,7 +7,7 @@ const Ota = () => {
     { src: "/booking.png", alt: "Booking.com" },
     { src: "/logo1.jpeg", alt: "trip.com" },
     { src: "/logo3.png", alt: "expedia" },
-    { src: "/logo4.png", alt: "bluepillow" },
+    { src: "/staah.jpg", alt: "staah" },
     { src: "/logo2.png", alt: "agoda" },
     
   ];

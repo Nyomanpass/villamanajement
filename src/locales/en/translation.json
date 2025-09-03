@@ -1,0 +1,450 @@
+{
+
+  "app": "Free Consultation",
+
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+
+   "hero": {
+    "slide1": {
+      "title": "Maximize Your Villa's Potential with Experts",
+      "description": "From reservations to financial reports, everything is managed with high standards and transparency.",
+      "button": "See Our Services"
+    },
+    "slide2": {
+      "title": "Increase Your Villa's Occupancy and Profit",
+      "description": "We help your property achieve maximum financial performance with proven marketing strategies.",
+      "button": "See Our Services"
+    },
+    "slide3": {
+      "title": "Guest Comfort, Owner Peace of Mind",
+      "description": "We ensure every guest has the best experience, so you can focus on what matters most.",
+      "button": "See Our Services"
+    },
+    "aboutTitle": "Peace of Mind, Continuous Investment Growth",
+    "aboutDescription": "We are here to provide trusted property management solutions, ensuring every operational detail runs smoothly. With personalized services and targeted strategies, we not only safeguard your assets but also help your investments grow to their full potential.",
+    "aboutMainImageAlt": "Main Villa Image"
+
+  },
+
+  "package": {
+    "titleSmall": "Our Package",
+    "titleMain": "Service Packages Tailored to Your Needs",
+    "description": "Find the most suitable package to support your villa, whether you need full management or a focus on effective online marketing.",
+    "packages": {
+      "fullManagement": {
+        "title": "Full Management",
+        "description": "Tired of managing your villa alone? With this package, operations, maintenance, finance, and marketing are handled professionally so you can enjoy the results.",
+        "button": "Choose This Package"
+      },
+      "onlineMarketing": {
+        "title": "Online Marketing",
+        "description": "Struggling to increase bookings even with organized operations? This package focuses on digital marketing, listing optimization, and online promotion to make your villa more known.",
+        "button": "Choose This Package"
+      }
+    },
+    "modal": {
+      "title": "Package Booking Form",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Message",
+      "submit": "Send via WhatsApp",
+      "placeholder": {
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "phone": "Enter your phone number",
+        "message": "Enter your message"
+      }
+    },
+    "alert": "Please fill in all required fields"
+  },
+  "servicesSection": {
+    "header": {
+      "subtitle": "Our team manages villa operations with professional standards, ensuring your property is well-maintained and guests feel comfortable.",
+      "title": "Daily Villa Management for Guest Comfort & Property Care",
+      "category": "Villa Operations"
+    },
+    "tabs": {
+      "Service": {
+        "label": "Service",
+        "items": [
+          {
+            "title": "Housekeeping",
+            "description": "Cleanliness is a top priority for guest comfort. Our housekeeping team is trained to keep your villa tidy, organized, and ready for occupancy at all times."
+          },
+          {
+            "title": "Hospitality",
+            "description": "Friendly and professional service that ensures every guest feels attended to, comfortable, and enjoys the best possible stay at your villa."
+          },
+          {
+            "title": "Maintenance",
+            "description": "Routine technical maintenance that prevents major issues and ensures all villa facilities function optimally."
+          }
+        ]
+      },
+      "pemasaran": {
+        "label": "Marketing",
+        "items": [
+          {
+            "title": "Booking Platforms",
+            "description": "We register and manage your villa on various well-known booking platforms to reach a wider market."
+          },
+          {
+            "title": "Digital Marketing",
+            "description": "Innovative digital marketing strategies, including SEO optimization, social media ads, and email campaigns, to increase your villa's visibility."
+          }
+        ]
+      },
+      "keuangan": {
+        "label": "Finance",
+        "items": [
+          {
+            "title": "Monthly Reports",
+            "description": "You will receive detailed and transparent monthly financial reports, including records of income and expenses."
+          },
+          {
+            "title": "Revenue Sharing",
+            "description": "Regular and timely rental income payments in accordance with the agreed-upon terms."
+          }
+        ]
+      },
+      "perawatan": {
+        "label": "Maintenance & Care",
+        "items": [
+          {
+            "title": "Gardening & Landscaping",
+            "description": "Routine care of gardens and landscape areas to maintain the villa’s beauty and appeal."
+          },
+          {
+            "title": "Swimming Pool",
+            "description": "Regular cleaning and maintenance of the swimming pool to ensure cleanliness and optimal water quality."
+          },
+          {
+            "title": "Interior Care",
+            "description": "Periodic maintenance of interiors and furniture to keep the villa in prime condition."
+          }
+        ]
+      },
+      "tamu": {
+        "label": "Guest Services",
+        "items": [
+          {
+            "title": "Check-in & Concierge",
+            "description": "Friendly, fast, and professional check-in and check-out services, along with concierge assistance to meet guests’ needs during their stay."
+          },
+          {
+            "title": "Airport Transfer",
+            "description": "Reliable airport pick-up and drop-off services providing extra comfort for your guests."
+          },
+          {
+            "title": "Tour Package",
+            "description": "Exclusive tour packages for guests to explore local destinations comfortably, safely, and with professional guidance."
+          }
+        ]
+      }
+    }
+  },
+
+    "servicesHome": {
+    "header": {
+      "subtitle": "Our Services",
+      "title": "What We Do",
+      "description": "We provide professional and comprehensive property management services, from operations to marketing."
+    },
+    "cards": [
+      {
+        "title": "WE MANAGE",
+        "desc": "Property rental, reservations, and villa operations.",
+        "image": "/villa/aming/villamanajementdua.jpg",
+        "link": "/layanan/we-manage"
+      },
+      {
+        "title": "WE CARE",
+        "desc": "Maintenance, communication, and professional guest services.",
+        "image": "/villa/umami/villamanajementtiga.jpg",
+        "link": "/layanan/we-care"
+      },
+      {
+        "title": "WE AMPLIFY",
+        "desc": "Online distribution, SEO, social media, photography & videography.",
+        "image": "/villa/poedja/villa11.jpg",
+        "link": "/layanan/we-amplify"
+      }
+    ],
+    "button": {
+      "text": "View All Services",
+      "link": "/layanan"
+    }
+  },
+
+  "howWeWork": {
+    "header": {
+      "subtitle": "How We Work",
+      "title": "Providing the Best Villa Management Services"
+    },
+    "cards": [
+      {
+        "title": "Marketing Strategy",
+        "desc": "We create professional photos and videos, SEO-friendly descriptions, and strong villa branding to make your property stand out."
+      },
+      {
+        "title": "Market & Financial Research",
+        "desc": "Data-driven planning helps predict revenue realistically so you can estimate your investment returns."
+      },
+      {
+        "title": "International Reach",
+        "desc": "Properties are distributed across popular platforms, social media, and trusted travel agent networks worldwide."
+      },
+      {
+        "title": "24/7 Guest Service",
+        "desc": "Reservations, inquiries, and guest needs are handled quickly by a team always ready to assist."
+      },
+      {
+        "title": "Best Service",
+        "desc": "Our cleaning and guest staff provide a comfortable and premium stay experience, like a boutique hotel."
+      },
+      {
+        "title": "Routine Maintenance",
+        "desc": "We have an internal technician team ready for urgent repairs, routine maintenance, and major renovations."
+      },
+      {
+        "title": "Owner Dashboard",
+        "desc": "Monitor property performance, maintenance reports, booking schedules, and payments directly via the owner app."
+      }
+    ]
+  },
+
+  "aboutUs": {
+    "header": {
+      "subtitle": "About Us",
+      "title": "Your Property is Our Priority",
+      "description": "Every property has its own story and unique value. Our task is to care for it with dedication while providing management strategies that make your property grow and prosper. We don’t just manage villas; we build transparent and trusted partnerships."
+    }
+  },
+
+  "whyChooseUs": {
+    "header": {
+      "subtitle": "Why Choose Us",
+      "title": "Our Work Philosophy",
+      "description": "Every step we take is based on quality, trust, and dedication to maximize your property's potential."
+    },
+    "cards": [
+      {
+        "title": "Professionalism",
+        "desc": "We work with high standards, ensuring every operational and service detail follows the best procedures.",
+        "icon": "FaUserTie"
+      },
+      {
+        "title": "Transparency",
+        "desc": "All reports, finances, and results are delivered openly so villa owners feel secure and confident.",
+        "icon": "FaBalanceScale"
+      },
+      {
+        "title": "Quality Commitment",
+        "desc": "We keep your property in prime condition, provide the best guest experience, and maintain your investment value.",
+        "icon": "FaStar"
+      },
+      {
+        "title": "Marketing Innovation",
+        "desc": "Modern marketing strategies leveraging digital technology to increase villa exposure and occupancy.",
+        "icon": "FaBullhorn"
+      },
+      {
+        "title": "Guest Focus",
+        "desc": "We prioritize guest satisfaction with friendly, professional, and attentive service, encouraging repeat visits.",
+        "icon": "FaSmile"
+      },
+      {
+        "title": "Long-Term Partnership",
+        "desc": "We are not just a service provider, but a strategic partner growing with you in developing your villa business.",
+        "icon": "FaHandshake"
+      }
+    ]
+  },
+
+  "faq": {
+    "header": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services."
+    },
+    "items": [
+      {
+        "question": "What services are included in villa management?",
+        "answer": "We handle everything from marketing, reservation management, guest verification, routine cleaning, property maintenance, to monthly financial reports. You just sit back and enjoy the profits.",
+        "msg": "Hello, I'd like to know which services are included in your villa management. Could you share the detailed scope and sample deliverables? Thank you."
+      },
+      {
+        "question": "How do you market my property?",
+        "answer": "We use a multi-platform marketing strategy, including listings on top booking sites like Airbnb and Booking.com, and promotions via social media and our travel agent network.",
+        "msg": "Hello, could you outline your marketing & reservation strategy for my villa?"
+      },
+      {
+        "question": "What is the villa management fee?",
+        "answer": "We apply a commission system based on a percentage of your property's net revenue. No hidden fees. This model ensures we work hard to maximize your income.",
+        "msg": "Hello, could you share your management fee structure?"
+      },
+      {
+        "question": "How can I monitor my villa's performance?",
+        "answer": "We provide a dedicated owner portal where you can view booking status, revenue reports, operating costs, and maintenance schedules transparently at any time.",
+        "msg": "Hello, what reporting and dashboard access will I get to monitor occupancy, ADR, RevPAR, expenses, and payouts? How often are reports provided?"
+      },
+      {
+        "question": "What if there is damage or an emergency?",
+        "answer": "Our team is on standby 24/7 to handle any issues, from minor repairs to emergencies. We will contact you for any major decisions regarding the property.",
+        "msg": "Hello, what is your SOP for maintenance issues or emergencies?"
+      },
+      {
+        "question": "Do you manage newly built villas?",
+        "answer": "Yes, we can help prepare your new property from scratch. We provide advice on interior setup, necessary equipment, and professional photos to make it market-ready.",
+        "msg": "Hello, do you also manage newly built villas? What is your approach to preparing them for the rental market?"
+      }
+    ]
+  },
+
+  "footer": {
+    "deskripsi": "A trusted partner in managing and optimizing the potential of your villa.",
+    "cta": {
+      "title": "It's Time for Your Villa to Be Managed by Experts",
+      "description": "One conversation can be the start of a major change. Let's discuss the best strategy to make your villa more profitable.",
+      "button": "Consult Now"
+    },
+    "links": {
+      "main": {
+        "title": "Links",
+        "items": [
+          { "name": "Home", "url": "/" },
+          { "name": "Product Pillars", "url": "/produk" },
+          { "name": "About Us", "url": "/about" },
+          { "name": "Contact", "url": "/contact" }
+        ]
+      },
+      "packages": {
+        "title": "Our Packages",
+        "items": [
+          { "name": "Full Management", "url": "/layanan/manajemen" },
+          { "name": "Online Marketing", "url": "/layanan/pemasaran" }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "phone": "+62 815‑7511‑2801",
+      "email": "info@manajemenvilla.com",
+      "address": "Jl. Sunset Road No.88, Bali"
+    },
+    "copyright": "© 2025 Villa Management. Powered by Bombora."
+  },
+
+  "about": {
+    "hero_title": "About Us",
+    "hero_desc": "We are a professional team focused on villa management in Bali, providing trusted services for owners while delivering memorable experiences for every guest.",
+    "founder_title": "Get to Know",
+    "founder_name": "Dina Amelya",
+    "founder_desc1": "Welcome to our villa management services. I am Dina Amelya, the founder with over 5 years of experience in the hospitality and property industry. My journey started from a deep love for Indonesia's natural beauty and the passion to create unforgettable guest experiences.",
+    "founder_desc2": "Our philosophy is based on a simple principle: \"Your Property Is Our Priority\". Every villa we manage is treated like our own property, with full attention to every detail, from routine maintenance to ensuring guests feel at home. This approach is not just business, but a personal dedication to maintain your property's quality and integrity.",
+    "founder_quote": "We believe that successful villa management is built on trust and transparent communication. We not only manage properties, but also build strong partnerships with owners to achieve shared goals."
+  },
+
+  "services": {
+    "hero_title": "Our Services",
+    "hero_desc": "We provide professional villa management services in Bali, ranging from marketing, maintenance, to guest services.",
+    "we_care_title": "We Care",
+    "we_care_desc": "From cleaning, gardens, to electrical & plumbing maintenance — our expert team handles all your property needs without exception. With high standards and proven experience, we ensure every villa receives thorough attention. Every detail is carefully monitored, from daily routine care to complex technical handling, ensuring optimal comfort and minimal disruption. With a transparent and professional approach, you can rest assured that your property is always under proper supervision.",
+    "we_manage_title": "We Manage",
+    "we_manage_desc": "We manage your property with full transparency, from creative marketing strategies to daily operations. With a systematic approach, every process is professionally handled by an experienced team. We ensure your property gets profitable reservations, trained staff according to standards, and transparent, easy-to-monitor financial reports. All this is done so you can feel confident that your property is always in its best condition.",
+    "we_amplify_title": "We Amplify",
+    "we_amplify_desc": "In the digital era, the power of online promotion is key to your property's success. Through global distribution strategies, SEO optimization, social media branding, and professional visuals, we help your property stand out in a competitive market. All steps are conducted with continuous evaluation to ensure maximum results.",
+    "care_services": [
+      {
+        "title": "Villa Maintenance",
+        "desc": "Property meticulously maintained by our professional team."
+      },
+      {
+        "title": "Guest Services",
+        "desc": "Full-time team ready to assist guests every day."
+      },
+      {
+        "title": "Interior Design",
+        "desc": "Assistance in redecorating interiors for more comfort."
+      },
+      {
+        "title": "Communication",
+        "desc": "Villa managers maintain full communication & trust."
+      }
+    ],
+    "manage_services": [
+      {
+        "title": "Rental & Marketing",
+        "desc": "Your property is marketed with creative & effective strategies."
+      },
+      {
+        "title": "Booking & Reservation",
+        "desc": "Efficient booking process with modern online calendar system."
+      },
+      {
+        "title": "Property Operations",
+        "desc": "Operational staff & management provided fully for your property."
+      },
+      {
+        "title": "Staff Training",
+        "desc": "Every staff trained to meet professional standards."
+      },
+      {
+        "title": "Monthly Reports",
+        "desc": "Full transparency through clear and routine financial reports."
+      }
+    ],
+    "amplify_services": [
+      {
+        "title": "E-Commerce Distribution",
+        "desc": "Property listed on partner agents, client databases & online travel platforms."
+      },
+      {
+        "title": "SEO & Social Media",
+        "desc": "Responsive website & strong branding across social media."
+      },
+      {
+        "title": "Photography & Videography",
+        "desc": "Professional photos, drone videos, and high-quality visuals."
+      },
+      {
+        "title": "Continuous Evaluation",
+        "desc": "Monitoring & ongoing improvements for optimal results."
+      }
+    ]
+  },
+
+  "gallery": {
+    "hero_title": "Villa Gallery",
+    "hero_desc": "Explore the beauty and luxury of our villas through a stunning collection of photos from every corner of this exceptional property."
+  },
+
+  "contact": {
+    "hero_title": "Contact Us",
+    "hero_desc": "Explore the beauty and luxury of our villas through a stunning collection of photos from every corner of this exceptional property.",
+    "form_title": "Send a Message",
+    "form_desc": "We will get back to you shortly.",
+    "input_name": "Full Name",
+    "input_email": "Email",
+    "input_phone": "Phone Number",
+    "input_subject": "Subject",
+    "input_message": "Your Message",
+    "form_button": "Send Message",
+    "info_title": "Get in Touch",
+    "info_desc": "We are ready to assist you anytime.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Working Hours",
+    "days": "Monday – Friday",
+    "time": "08.00 – 17.00 WITA"
+  }
+
+
+}

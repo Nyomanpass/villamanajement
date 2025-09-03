@@ -1,61 +1,45 @@
 import React from "react";
 import { FaBullhorn, FaChartLine, FaGlobe, FaComments, FaUsers, FaTools, FaClipboardList } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function HowWeWork() {
+  const { t } = useTranslation();
+
+  const cardIcons = [
+    <FaBullhorn size={28} />,
+    <FaChartLine size={28} />,
+    <FaGlobe size={28} />,
+    <FaComments size={28} />,
+    <FaUsers size={28} />,
+    <FaTools size={28} />,
+    <FaClipboardList size={28} />
+  ];
+
+  const cards = t("howWeWork.cards", { returnObjects: true });
+
   return (
     <section className="w-full bg-white text-white py-20 px-6">
       {/* Judul + Subjudul */}
-     <div className="text-center">
-             <h3 className="font-raleway text-lg font-semibold text-gray-500 mb-2">
-              Cara Kami Bekerja
-            </h3>
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent leading-snug">
-                 Memberikan Layanan Manajemen Vila Terbaik
-            </h2>
-        </div>
+      <div className="text-center">
+        <h3 className="font-raleway text-lg font-semibold text-gray-500 mb-2">
+          {t("howWeWork.header.subtitle")}
+        </h3>
+        <h2 className="font-playfair text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent leading-snug">
+          {t("howWeWork.header.title")}
+        </h2>
+      </div>
 
       <div className="space-y-6 px-6 md:px-12 lg:px-24 py-10">
-        {/* Baris 1 - 4 item */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <Card
-            icon={<FaBullhorn size={28} />}
-            title="Strategi Pemasaran"
-            desc="Kami ciptakan foto dan video profesional, deskripsi ramah mesin pencari, serta branding villa yang kuat agar properti Anda lebih menonjol."
-          />
-          <Card
-            icon={<FaChartLine size={28} />}
-            title="Riset Pasar & Keuangan"
-            desc="Perencanaan berbasis data membantu memprediksi pendapatan secara realistis sehingga Anda bisa memperkirakan keuntungan investasi."
-          />
-          <Card
-            icon={<FaGlobe size={28} />}
-            title="Jangkauan Internasional"
-            desc="Properti didistribusikan ke berbagai platform populer, media sosial, dan jaringan agen wisata terpercaya di seluruh dunia."
-          />
-          <Card
-            icon={<FaComments size={28} />}
-            title="Layanan Tamu 24/7"
-            desc="Reservasi, pertanyaan, maupun kebutuhan tamu ditangani secara cepat oleh tim yang selalu siap setiap saat."
-          />
+          {cards.slice(0, 4).map((card, index) => (
+            <Card key={index} icon={cardIcons[index]} title={card.title} desc={card.desc} />
+          ))}
         </div>
 
-        {/* Baris 2 - 3 item */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <Card
-            icon={<FaUsers size={28} />}
-            title="Pelayanan Terbaik"
-            desc="Tim kebersihan dan staf tamu kami memberikan pengalaman menginap yang nyaman dan berkelas, layaknya hotel butik."
-          />
-          <Card
-            icon={<FaTools size={28} />}
-            title="Pemeliharaan Rutin"
-            desc="Kami memiliki tim teknisi internal yang siap melakukan perbaikan mendesak, perawatan rutin, hingga renovasi besar."
-          />
-          <Card
-            icon={<FaClipboardList size={28} />}
-            title="Dashboard Pemilik"
-            desc="Pantau langsung kinerja properti, laporan pemeliharaan, jadwal penyewaan, hingga pembayaran melalui aplikasi khusus pemilik."
-          />
+          {cards.slice(4).map((card, index) => (
+            <Card key={index} icon={cardIcons[index + 4]} title={card.title} desc={card.desc} />
+          ))}
         </div>
       </div>
     </section>

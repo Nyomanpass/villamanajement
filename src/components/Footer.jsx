@@ -1,38 +1,45 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
-// Gabungkan CTA dan Footer dalam satu komponen
 export default function Footer() {
+  const { t } = useTranslation();
+  const cta = t("footer.cta", { returnObjects: true });
+  const mainLinks = t("footer.links.main.items", { returnObjects: true });
+  const mainTitle = t("footer.links.main.title");
+  const packageLinks = t("footer.links.packages.items", { returnObjects: true });
+  const packageTitle = t("footer.links.packages.title");
+  const contact = t("footer.contact", { returnObjects: true });
+  const copyright = t("footer.copyright");
+
   return (
     <>
       {/* ================= Bagian CTA Interaktif ================= */}
       <section
-        className="relative py-20 px-6 md:px-11 lg:px-14 xl:px-2 bg-cover bg-center"
-        style={{ backgroundImage: "url('/villa/umami/villamanajementdua.jpg')" }} // Ganti dengan gambar latar CTA Anda
+        className="relative py-20 px-6 md:px-11 lg:px-14 xl:px-28 bg-cover bg-center"
+        style={{ backgroundImage: "url('/villa/umami/villamanajementdua.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/40"></div> {/* Overlay Gelap */}
 
         <div className="relative z-10 text-center">
           <h3 className="font-playfair text-3xl md:text-5xl font-bold text-white leading-snug mb-4 drop-shadow-lg">
-            Waktunya Villa Anda Dikelola oleh Ahlinya
+            {cta.title}
           </h3>
           <p className="font-lora text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Satu percakapan bisa jadi awal perubahan besar. Mari diskusikan strategi terbaik
-            untuk menjadikan villa Anda lebih menguntungkan.
+            {cta.description}
           </p>
           <a
-            href="#" // Ganti dengan URL halaman kontak atau formulir
+            href="#"
             className="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-secondary transition-colors duration-300 transform hover:scale-105 inline-block"
           >
-            Konsultasi Sekarang
+            {cta.button}
           </a>
         </div>
       </section>
 
-      <footer className="bg-brown px-6 md:px-11 lg:px-14 xl:px-2 text-white py-20 px-6 ">
+      <footer className="bg-brown px-6 md:px-11 lg:px-14 xl:px-24 text-white py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-
           {/* Kolom 1: Brand + Sosmed */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -43,62 +50,65 @@ export default function Footer() {
               />
             </div>
             <p className="font-lora text-sm text-slate-300 mb-4">
-              Partner terpercaya dalam mengelola dan mengoptimalkan potensi villa Anda.
+              {t("footer.deskripsi")}
             </p>
             <div className="flex space-x-4 text-xl text-white">
-              <a href="#" className="hover:text-primary"><FaFacebookF /></a>
               <a href="#" className="hover:text-primary"><FaInstagram /></a>
-              <a href="#" className="hover:text-primary"><FaTwitter /></a>
-              <a href="#" className="hover:text-primary"><FaWhatsapp /></a>
+              <a href="https://wa.me/6281575112801?text=Hello%2C%20I%20am%20interested%20in%20your%20villa%20management%20services." className="hover:text-primary"><FaWhatsapp /></a>
             </div>
           </div>
 
           {/* Kolom 2: Link Utama */}
           <div>
-            <h3 className="font-raleway font-semibold text-white mb-3">Link</h3>
+            <h3 className="font-raleway font-semibold text-white mb-3">{mainTitle}</h3>
             <ul className="font-lora space-y-2 text-slate-300">
-              <li><a href="/" className="hover:text-primary transition-colors duration-200">Home</a></li>
-              <li><a href="/produk" className="hover:text-primary transition-colors duration-200">Pilar Produk</a></li>
-              <li><a href="/about" className="hover:text-primary transition-colors duration-200">Tentang Kami</a></li>
-              <li><a href="/contact" className="hover:text-primary transition-colors duration-200">Kontak</a></li>
+              {mainLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.url} className="hover:text-primary transition-colors duration-200">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Kolom 3: Layanan Kami (Konten Baru) */}
+          {/* Kolom 3: Layanan Kami */}
           <div>
-            <h3 className="font-raleway font-semibold text-white mb-3">Package Kami</h3>
+            <h3 className="font-raleway font-semibold text-white mb-3">{packageTitle}</h3>
             <ul className="font-lora space-y-2 text-slate-300">
-              <li><a href="/layanan/manajemen" className="hover:text-primary transition-colors duration-200">Full Management</a></li>
-              <li><a href="/layanan/pemasaran" className="hover:text-primary transition-colors duration-200">Online Marketing</a></li>
+              {packageLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.url} className="hover:text-primary transition-colors duration-200">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Kolom 4: Hubungi Kami */}
           <div>
-            <h3 className="font-raleway font-semibold text-white mb-3">Hubungi Kami</h3>
+            <h3 className="font-raleway font-semibold text-white mb-3">{contact.title}</h3>
             <div className="font-lora text-slate-300 space-y-2">
               <div className="flex items-center space-x-2">
                 <MdPhone />
-                <span>0812-xxxx-xxxx</span>
+                <span>{contact.phone}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MdEmail />
-                <span>info@manajemenvilla.com</span>
+                <span>{contact.email}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MdLocationOn />
-                <span>Jl. Sunset Road No.88, Bali</span>
+                <span>Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</span>
               </div>
             </div>
           </div>
-
-          {/* Kolom 5: Berlangganan Newsletter (Konten Diubah) */}
-        
         </div>
 
         {/* Copyright */}
         <div className="border-t border-white mt-10 pt-6 text-center text-sm text-white">
-          © 2025 Manajemen Villa. Powered by Bombora.
+          {copyright}
         </div>
       </footer>
     </>
