@@ -2,11 +2,11 @@ import React from 'react';
 
 function AboutUsSection() {
   const villaImages = [
-    '/villa1.jpg',
-    '/villa2.jpg',
-    '/villa3.jpg',
-    '/villa4.jpg',
-    '/aboutdua.jpg',
+    '/villa/aming/villamanajementtiga.jpg',
+    '/villa/umami/villamanajementsatu.jpg',
+    '/villa/merak/villamanajementempat.jpg',
+    '/villa/poedja/villa10.jpg',
+    '/villa/umami/villamanajementlima.jpg',
   ];
 
   return (

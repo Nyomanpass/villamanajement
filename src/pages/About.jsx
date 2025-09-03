@@ -8,14 +8,24 @@ function About() {
    <>
    <Navbar/>
      <div className="h-[40vh] relative">
-        <img src="/herotiga.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
+        <img src="/villa/umami/villamanajementsatu.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
         {/* Overlay Background */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[-1]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1]"></div>
 
         {/* Content */}
-        <div className="flex flex-col justify-center items-center h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 pt-12 z-10">
-          <h1 className="text-white font-alice font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-center lg:text-left">About Us</h1>
+       <div className="flex flex-col justify-center items-center h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 pt-12 z-10">
+        <div className="text-center mb-12">
+          <h2 className="text-5xl font-bold text-white">
+            About Us
+          </h2>
+          <p className="text-white max-w-2xl mx-auto mt-3">
+            Kami adalah tim profesional yang fokus pada manajemen villa di Bali,
+            menghadirkan layanan terpercaya untuk pemilik sekaligus pengalaman
+            berkesan bagi setiap tamu.
+          </p>
         </div>
+      </div>
+
       </div>
 
 <section className="w-full bg-white py-20 px-6 md:px-11 lg:px-14 xl:px-28">
@@ -45,7 +55,7 @@ function About() {
     {/* Gambar di kanan (Untuk layar besar) */}
     <div className="w-full  flex justify-center lg:justify-end">
       <img
-        src="/herodua.jpg" // Ganti dengan gambar Dina Amelya
+        src="/villa/uliwood/villamanajementsatu.jpg" // Ganti dengan gambar Dina Amelya
         alt="Dina Amelya, Pendiri"
         className="w-full h-full rounded-xl shadow-2xl object-cover transform transition-all duration-300 hover:scale-105"
       />
@@ -53,6 +63,7 @@ function About() {
   </div>
 </section>
     <Services/>
+    <br /><br /><br />
     <Footer/>
    </>
   );

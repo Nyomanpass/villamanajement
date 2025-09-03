@@ -8,12 +8,12 @@ export default function Footer() {
     <>
       {/* ================= Bagian CTA Interaktif ================= */}
       <section
-        className="relative py-20 px-6 md:px-12 lg:px-24 bg-cover bg-center"
-        style={{ backgroundImage: "url('/herodua.jpg')" }} // Ganti dengan gambar latar CTA Anda
+        className="relative py-20 px-6 md:px-11 lg:px-14 xl:px-2 bg-cover bg-center"
+        style={{ backgroundImage: "url('/villa/umami/villamanajementdua.jpg')" }} // Ganti dengan gambar latar CTA Anda
       >
         <div className="absolute inset-0 bg-black/40"></div> {/* Overlay Gelap */}
 
-        <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <div className="relative z-10 text-center">
           <h3 className="font-playfair text-3xl md:text-5xl font-bold text-white leading-snug mb-4 drop-shadow-lg">
             Waktunya Villa Anda Dikelola oleh Ahlinya
           </h3>
@@ -30,8 +30,8 @@ export default function Footer() {
         </div>
       </section>
 
-      <footer className="bg-brown  px-6 md:px-11 lg:px-14 xl:px-32 text-white py-20 px-6 md:px-12 lg:px-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <footer className="bg-brown px-6 md:px-11 lg:px-14 xl:px-2 text-white py-20 px-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
           {/* Kolom 1: Brand + Sosmed */}
           <div>
@@ -66,12 +66,10 @@ export default function Footer() {
 
           {/* Kolom 3: Layanan Kami (Konten Baru) */}
           <div>
-            <h3 className="font-raleway font-semibold text-white mb-3">Layanan Kami</h3>
+            <h3 className="font-raleway font-semibold text-white mb-3">Package Kami</h3>
             <ul className="font-lora space-y-2 text-slate-300">
-              <li><a href="/layanan/manajemen" className="hover:text-primary transition-colors duration-200">Manajemen Harian</a></li>
-              <li><a href="/layanan/pemasaran" className="hover:text-primary transition-colors duration-200">Pemasaran & Reservasi</a></li>
-              <li><a href="/layanan/keuangan" className="hover:text-primary transition-colors duration-200">Laporan Keuangan</a></li>
-              <li><a href="/layanan/perawatan" className="hover:text-primary transition-colors duration-200">Perawatan Properti</a></li>
+              <li><a href="/layanan/manajemen" className="hover:text-primary transition-colors duration-200">Full Management</a></li>
+              <li><a href="/layanan/pemasaran" className="hover:text-primary transition-colors duration-200">Online Marketing</a></li>
             </ul>
           </div>
 
@@ -95,25 +93,7 @@ export default function Footer() {
           </div>
 
           {/* Kolom 5: Berlangganan Newsletter (Konten Diubah) */}
-          <div>
-            <h3 className="font-raleway font-semibold text-white mb-3">Berlangganan Newsletter</h3>
-            <p className="font-lora text-sm text-slate-300 mb-3">
-              Dapatkan tips & penawaran eksklusif langsung ke email Anda.
-            </p>  
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Email Anda"
-                className="px-4 py-2 rounded-l-md text-gray-800 w-full focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <button
-                type="submit"
-                className="bg-primary px-4 rounded-r-md text-white hover:bg-secondary transition-colors duration-300"
-              >
-                Kirim
-              </button>
-            </form>
-          </div>
+        
         </div>
 
         {/* Copyright */}

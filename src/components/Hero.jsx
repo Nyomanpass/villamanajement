@@ -6,17 +6,17 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   const slides = [
     {
-      image: "/herotiga.jpg",
+      image: "/villa/poedja/villa3.jpg",
       title: "Maksimalkan Potensi Villa Anda Bersama Ahlinya",
       description: "Dari reservasi hingga laporan keuangan, semua dikelola dengan standar tinggi dan transparan.",
     },
     {
-      image: "/villa4.jpg",
+      image: "/villa/poedja/villa6.jpg",
       title: "Tingkatkan Okupansi dan Keuntungan Villa Anda",
       description: "Kami hadir untuk membantu properti Anda mencapai kinerja finansial maksimal dengan strategi pemasaran yang teruji.",
     },
     {
-      image: "/herodua.jpg",
+      image: "/villa/uliwood/villamanajementdua.jpg",
       title: "Kenyamanan Tamu, Ketenangan Pemilik",
       description: "Kami memastikan setiap tamu mendapatkan pengalaman menginap terbaik, sehingga Anda bisa fokus pada hal yang lebih penting.",
     },
@@ -86,7 +86,7 @@ export default function Hero() {
                 className="flex gap-4"
               >
                 <a
-                  href="#service"
+                  href="/layanan"
                   className="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-secondary transition-colors duration-300 transform hover:scale-105"
                 >
                   Lihat Layanan Kami
@@ -117,7 +117,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="w-full relative h-[450px] md:h-[600px] lg:h-[700px] rounded-lg shadow-2xl overflow-hidden">
             <img
-              src="/aboutdua.jpg" 
+              src="/villa/umami/villamanajementtiga.jpg" 
               alt="Main Villa"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
@@ -127,14 +127,12 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="absolute inset-0 flex items-center justify-center cursor-pointer"
             >
-              <button className="flex items-center justify-center p-6 rounded-full bg-white bg-opacity-70 text-gray-800 hover:bg-opacity-90 transition-all duration-300 transform hover:scale-110 shadow-lg">
-                <FaPlay size={30} />
-              </button>
+      
             </a>
           </div>
 
           <div className="relative w-full h-full flex flex-col justify-center text-center lg:text-left">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight text-center lg:text-left">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent leading-snug mb-5">
               Ketenangan Pikiran,<br /> Investasi Terus Bertumbuh
             </h2>
             <p className="font-lora text-gray-600 leading-relaxed text-center lg:text-left">
@@ -144,26 +142,20 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row gap-6 mt-12 w-full justify-center lg:justify-start">
               <div className="relative w-full md:w-1/2 h-64 rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/abouttiga.jpg" 
+                  src="/villa/umami/villamanajementempat.jpg" 
                   alt="Small Villa 2"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="relative w-full md:w-1/2 h-64 rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/aboutsatu.jpg" 
+                  src="/villa/merak/villamanajementenam.jpg" 
                   alt="Small Villa 1"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
             </div>
             
-            <a
-              href="/about" 
-              className="mt-8 max-w-max px-6 py-3 bg-secondary text-white font-semibold rounded-full shadow-lg hover:bg-primary transition-colors duration-300 transform hover:scale-105 inline-block mx-auto lg:mx-0"
-            >
-              Pelajari Lebih Lanjut
-            </a>
           </div>
         </div>
       </section>

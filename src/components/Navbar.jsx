@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { path } from "framer-motion/client";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +10,7 @@ function Navbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about-page" },
+    { name: "Layanan", path: "/layanan" },
     { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
   ];
@@ -45,7 +47,7 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <button className="text-2xl md:hidden transition-colors duration-300" onClick={handleToggle}>
-          <Menu size={28} className={isScrolled ? "text-primary" : "text-white"} />
+          <Menu size={28} className={isScrolled ? "text-secondary" : "text-white"} />
         </button>
 
         {/* Desktop Navigation */}
@@ -69,7 +71,7 @@ function Navbar() {
         <>
           <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 animate-fadeIn" onClick={handleToggle}></div>
 
-          <div className={`fixed top-0 right-0 w-[80%] max-w-xs h-full bg-secondary text-primary px-6 pt-4 z-50 transition-transform duration-500 transform ${isOpen ? "translate-x-0 animate-slideIn" : "translate-x-full animate-slideOut"}`}>
+          <div className={`fixed top-0 right-0 w-[80%] max-w-xs h-full bg-secondary text-white px-6 pt-4 z-50 transition-transform duration-500 transform ${isOpen ? "translate-x-0 animate-slideIn" : "translate-x-full animate-slideOut"}`}>
             <div className="flex justify-end">
               <button className="text-3xl" onClick={handleToggle}>
                 <X className="text-white" size={28} />
@@ -91,9 +93,9 @@ function Navbar() {
 
             <div className="mt-10">
               <p className="font-semibold">Address</p>
-              <p>Jl. Raya Gentong, Tegallalang, Ubud</p>
+              <p className="text-slate-100">Jl. Raya Gentong, Tegallalang, Ubud</p>
               <p className="font-semibold mt-4">Open Time</p>
-              <p>Monday - Friday: 10.00 - 17.00</p>
+              <p className="text-slate-100">Monday - Friday: 10.00 - 17.00</p>
             </div>
           </div>
         </>

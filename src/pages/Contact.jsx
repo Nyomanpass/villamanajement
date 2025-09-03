@@ -10,11 +10,21 @@ const Contact = () => {
       <Navbar />
 
       <div className="h-[40vh] relative">
-        <img src="/herotiga.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
-        <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[-1]"></div>
+        <img src="/villa/umami/villamanajementsatu.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
+        {/* Overlay Background */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1]"></div>
 
+        {/* Content */}
         <div className="flex flex-col justify-center items-center h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 pt-12 z-10">
-          <h1 className="text-white font-alice font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-center lg:text-left">Contact Us</h1>
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-bold text-white">
+              Contact Us
+            </h2>
+            <p className="text-white max-w-2xl mx-auto mt-3">
+              Jelajahi keindahan dan kemewahan villa kami melalui koleksi foto yan
+              menakjubkan dari setiap sudut properti yang istimewa ini.
+            </p>
+          </div>
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Gallery from "./pages/Gallery"
+import PageServices from "./pages/Layanan"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about-page" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/layanan" element={<PageServices/>}/>
         </Routes>
       </Router>
     </>
