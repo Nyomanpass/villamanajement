@@ -318,9 +318,10 @@
       "main": {
         "title": "Link",
         "items": [
-          { "name": "Home", "url": "/" },
-          { "name": "Pilar Produk", "url": "/produk" },
-          { "name": "Tentang Kami", "url": "/about" },
+          { "name": "Beranda", "url": "/" },
+          { "name": "Tentang Kami", "url": "/about-page" },
+          { "name": "Layanan", "url": "/layanan" },
+          { "name": "Galeri", "url": "/gallery" },
           { "name": "Kontak", "url": "/contact" }
         ]
       },

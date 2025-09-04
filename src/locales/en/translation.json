@@ -317,12 +317,14 @@
     "links": {
       "main": {
         "title": "Links",
-        "items": [
+         "items": [
           { "name": "Home", "url": "/" },
-          { "name": "Product Pillars", "url": "/produk" },
-          { "name": "About Us", "url": "/about" },
+          { "name": "About Us", "url": "/about-page" },
+          { "name": "Services", "url": "/layanan" },
+          { "name": "Gallery", "url": "/gallery" },
           { "name": "Contact", "url": "/contact" }
         ]
+
       },
       "packages": {
         "title": "Our Packages",
