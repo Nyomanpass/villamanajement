@@ -143,6 +143,75 @@ const villas = {
     },
     
   ],
+
+  "Lios Guest House": [
+    {
+      id: "lios-1",
+      src: "/villa/lios/liossatu.jpg",
+      alt: "Villa lios 1",
+    },
+     {
+      id: "lios-2",
+      src: "/villa/lios/liosdua.jpg",
+      alt: "Villa lios 2",
+    },
+
+    {
+      id: "lios-3",
+      src: "/villa/lios/liostiga.jpg",
+      alt: "Villa lios 3",
+    },
+
+    {
+      id: "lios-4",
+      src: "/villa/lios/liosempat.jpg",
+      alt: "Villa lios 4",
+    },
+
+    {
+      id: "lios-5",
+      src: "/villa/lios/lioslima.jpg",
+      alt: "Villa lios 5",
+    },
+
+    {
+      id: "lios-6",
+      src: "/villa/lios/liosenam.jpg",
+      alt: "Villa lios 1",
+    },
+
+    {
+      id: "lios-7",
+      src: "/villa/lios/liostujuh.jpg",
+      alt: "Villa lios 1",
+    },
+    
+  ],
+
+  "Marint Guest House": [
+       {
+        id: "marint-2",
+        src: "/villa/marin/marindua.webp",
+        alt: "Villa marin 2",
+      },
+       {
+        id: "marint-3",
+        src: "/villa/marin/marintiga.webp",
+        alt: "Villa marin 3",
+      },
+
+       {
+        id: "marint-4",
+        src: "/villa/marin/marinempat.webp",
+        alt: "Villa marin 4",
+      },
+       {
+        id: "marint-5",
+        src: "/villa/marin/marinlima.webp",
+        alt: "Villa marin 5",
+      },
+  ]
+
 };
 
 
