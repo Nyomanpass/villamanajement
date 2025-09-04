@@ -67,7 +67,7 @@ const Contact = () => {
                 <FaEnvelope className="text-primary text-2xl mt-1" />
                 <div>
                   <h4 className="font-bold text-gray-800">{t("contact.email")}</h4>
-                  <p className="text-gray-600">info@villabali.com</p>
+                  <p className="text-gray-600">Managementbyda28@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

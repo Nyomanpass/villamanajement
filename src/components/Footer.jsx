@@ -96,7 +96,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <MdEmail />
-                <span>{contact.email}</span>
+                <span>Managementbyda28@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MdLocationOn />
