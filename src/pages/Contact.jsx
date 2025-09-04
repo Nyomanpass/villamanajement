@@ -4,9 +4,32 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import FaqSection from "../components/FaqSection";
+import { useState } from "react";
 
 const Contact = () => {
   const { t } = useTranslation();
+    const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const whatsappNumber = "6281575112801"; // nomor tujuan WA (format internasional tanpa +)
+    const text = `Halo, saya ${formData.name}%0AEmail: ${formData.email}%0ATelepon: ${formData.phone}%0ASubjek: ${formData.subject}%0APesan: ${formData.message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+    window.open(url, "_blank"); // buka WhatsApp
+  };
+
 
   return (
     <>
@@ -30,16 +53,56 @@ const Contact = () => {
           <div className="bg-white p-8 lg:p-12 rounded-lg shadow-lg">
             <h2 className="font-playfair font-semibold text-3xl mb-2 text-gray-800">{t("contact.form_title")}</h2>
             <p className="text-gray-500 mb-8">{t("contact.form_desc")}</p>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" placeholder={t("contact.input_name")} className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200" />
-                <input type="email" placeholder={t("contact.input_email")} className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200" />
-                <input type="text" placeholder={t("contact.input_phone")} className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200" />
-                <input type="text" placeholder={t("contact.input_subject")} className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200" />
-              </div>
-              <textarea rows="5" placeholder={t("contact.input_message")} className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"></textarea>
-              <button type="submit" className="w-full bg-secondary hover:bg-primary text-white font-semibold py-4 rounded-lg transition-colors duration-300">{t("contact.form_button")}</button>
-            </form>
+            <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input
+          type="text"
+          name="name"
+          placeholder={t("contact.input_name")}
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder={t("contact.input_email")}
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"
+        />
+        <input
+          type="text"
+          name="phone"
+          placeholder={t("contact.input_phone")}
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder={t("contact.input_subject")}
+          value={formData.subject}
+          onChange={handleChange}
+          className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"
+        />
+      </div>
+      <textarea
+        rows="5"
+        name="message"
+        placeholder={t("contact.input_message")}
+        value={formData.message}
+        onChange={handleChange}
+        className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"
+      ></textarea>
+      <button
+        type="submit"
+        className="w-full bg-secondary hover:bg-primary text-white font-semibold py-4 rounded-lg transition-colors duration-300"
+      >
+        {t("contact.form_button")}
+      </button>
+    </form>
           </div>
 
           {/* Contact Info Section */}

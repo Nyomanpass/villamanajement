@@ -1,6 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { FaInstagram, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -53,8 +52,8 @@ export default function Footer() {
               {t("footer.deskripsi")}
             </p>
             <div className="flex space-x-4 text-xl text-white">
-              <a href="#" className="hover:text-primary"><FaInstagram /></a>
-              <a href="https://wa.me/6281575112801?text=Hello%2C%20I%20am%20interested%20in%20your%20villa%20management%20services." className="hover:text-primary"><FaWhatsapp /></a>
+              <a href="https://www.instagram.com/da_villamanagement?igsh=dWZjaXVldThvY3hw" target="_blank" className="hover:text-primary"><FaInstagram /></a>
+              <a href="https://wa.me/6281575112801?text=Hello%2C%20I%20am%20interested%20in%20your%20villa%20management%20services." target="_blank" className="hover:text-primary"><FaWhatsapp /></a>
             </div>
           </div>
 
@@ -87,23 +86,34 @@ export default function Footer() {
           </div>
 
           {/* Kolom 4: Hubungi Kami */}
-          <div>
-            <h3 className="font-raleway font-semibold text-white mb-3">{contact.title}</h3>
-            <div className="font-lora text-slate-300 space-y-2">
-              <div className="flex items-center space-x-2">
-                <MdPhone />
-                <span>{contact.phone}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MdEmail />
-                <span>Managementbyda28@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MdLocationOn />
-                <span>Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</span>
-              </div>
-            </div>
+       <div>
+        <h3 className="font-raleway font-semibold text-white mb-3">{contact.title}</h3>
+        <div className="font-lora text-white space-y-2">
+          {/* Phone */}
+          <div className="flex items-center space-x-2">
+            <FaPhoneAlt className="text-white w-4 h-4 shrink-0" />
+            <span className="text-slate-300">{contact.phone}</span>
           </div>
+
+          {/* Email */}
+          <div className="flex items-start space-x-2">
+            <FaEnvelope className="text-white w-4 h-4 shrink-0" />
+            <span className="break-words text-slate-300">
+              Managementbyda28@gmail.com
+            </span>
+          </div>
+
+          {/* Address */}
+          <div className="flex items-start space-x-2">
+            <FaMapMarkerAlt className="text-white w-4 h-4 shrink-0" />
+            <span className="break-words text-slate-300">
+              Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361
+            </span>
+          </div>
+        </div>
+      </div>
+
+
         </div>
 
         {/* Copyright */}
