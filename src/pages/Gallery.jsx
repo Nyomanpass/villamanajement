@@ -210,6 +210,31 @@ const villas = {
         src: "/villa/marin/marinlima.webp",
         alt: "Villa marin 5",
       },
+  ],
+
+  "Casa De Bukit": [
+      {
+        id: "casa-1",
+        src: "/villa/casa/casasatu.jpg",
+        alt: "Villa casa 1",
+      },
+            {
+        id: "casa-2",
+        src: "/villa/casa/casadua.jpg",
+        alt: "Villa casa 2",
+      },
+            {
+        id: "casa-3",
+        src: "/villa/casa/casatiga.jpg",
+        alt: "Villa casa 3",
+      },
+            {
+        id: "casa-4",
+        src: "/villa/casa/casaempat.jpg",
+        alt: "Villa casa 4",
+      },
+
+       
   ]
 
 };
